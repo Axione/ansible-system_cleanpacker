@@ -30,3 +30,7 @@
 - name: Import clean_machine_id.yml
   ansible.builtin.import_tasks: clean_machine_id.yml
   when: cleanpacker_clean_machine_id | bool
+
+- name: Import clean_repo_hold.yml
+  ansible.builtin.import_tasks: clean_repo_hold.yml
+  when: cleanpacker_clean_repo_hold | bool
