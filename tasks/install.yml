@@ -34,3 +34,9 @@
 - name: Import clean_repo_hold.yml
   ansible.builtin.import_tasks: clean_repo_hold.yml
   when: cleanpacker_clean_repo_hold | bool
+
+- name: Import redhat9.yml
+  ansible.builtin.import_tasks: redhat9.yml
+  when:
+    - ansible_facts.os_family == "RedHat"
+    - ansible_facts.distribution_major_version | int == 9

@@ -2,7 +2,7 @@
 cleanpacker_truncate_logs: false
 cleanpacker_rebuild_hostkeys: false
 cleanpacker_clean_cloudinit: false
-# cleanpacker_clean_cloudinit: "{% if ansible_distribution == 'Ubuntu' %}true{% else %}false{% endif %}"
+# cleanpacker_clean_cloudinit: "{% if ansible_facts.distribution == 'Ubuntu' %}true{% else %}false{% endif %}"
 cleanpacker_disable_services: false
 cleanpacker_delete_unusedlocales: false
 cleanpacker_disable_dns_netmanager: false
