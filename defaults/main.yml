@@ -11,3 +11,4 @@ cleanpacker_locales_keep: ["en", "fr", "sk"]
 cleanpacker_hypervisor: "vmware"
 cleanpacker_clean_machine_id: "false"
 cleanpacker_clean_repo_hold: "false"
+cleanpacker_remove_rc_local: "false"
